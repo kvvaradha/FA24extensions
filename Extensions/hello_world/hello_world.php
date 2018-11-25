@@ -4,6 +4,7 @@ $path_to_root = "../..";
 $page_security = 'SA_OPEN';
 
 include_once($path_to_root . "/includes/session.inc"); // logged in user credentials for use in the script
+add_access_extensions();  //Incase if you go with custom Access level, you need this function to work the page. 
 include_once($path_to_root . "/includes/ui/main.inc"); // page, end_page
 include_once($path_to_root . "/includes/ui/ui_input.inc"); // label_cell
 include_once($path_to_root . "/includes/ui/ui_controls.inc"); // start_table,  end_table, br, start_form, end_form, start_row, end_row, alt_table_row_color
